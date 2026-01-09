@@ -25,7 +25,6 @@ function images() {
         .src('./src/images/**/*')
         .pipe(
             imagemin()
-            .on('error', sass.logError)
         )
         .pipe(gulp.dest('./dist/images'));
 }
